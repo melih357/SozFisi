@@ -1,0 +1,12 @@
+{
+  "name": "SözFişi",
+  "short_name": "SözFişi",
+  "description": "Konuştuklarınızı birlikte netleştirin.",
+  "start_url": "../index.php",
+  "display": "standalone",
+  "background_color": "#f6f8f9",
+  "theme_color": "#0BAA9A",
+  "icons": [
+    {"src": "assets/images/logo-icon.png", "sizes": "405x365", "type": "image/png", "purpose": "any maskable"}
+  ]
+}

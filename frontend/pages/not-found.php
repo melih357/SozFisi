@@ -1,0 +1,1 @@
+<section class="auth-section"><div class="auth-card"><div class="auth-logo"><img src="<?= e(url('frontend/assets/images/logo-icon.png')) ?>" alt=""></div><span class="eyebrow">404</span><h1>Bu sayfa bulunamadı</h1><p>Bağlantı değiştirilmiş veya sayfa taşınmış olabilir.</p><a class="btn btn-primary" href="<?= e(page_url('home')) ?>">Ana sayfaya dön</a></div></section>
