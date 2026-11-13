@@ -1,8 +1,57 @@
-# SözFişi — WAMP Server MVP v1
+<div align="center">
 
-SözFişi, iki kişinin konuşarak veya mesajlaşarak vardığı küçük anlaşmaları; karşılıklı kontrol edilen, sürümlenen, OTP ile onaylanabilen, takip edilen ve tamamlanabilen ortak bir işlem kaydına dönüştüren mobil uyumlu PHP/MySQL web uygulamasıdır.
+![SözFişi GitHub banner](docs/assets/sozfisi-github-banner.png)
 
-Bu paket özellikle **WAMP Server** için hazırlanmıştır. Docker, Node.js veya Composer kurulumu gerekmez.
+# SözFişi
+
+### Konuştuk. Netleştirdik.
+
+**Anlaşmaları kayıt altına alan, sürümlendiren ve karşılıklı onay sürecini takip eden mobil uyumlu web uygulaması.**
+
+`PHP` · `MySQL` · `JavaScript` · `PWA` · `WAMP`
+
+[Proje sahibi](https://github.com/melih357) · [LinkedIn](https://www.linkedin.com/in/melihefeercan/)
+
+</div>
+
+## Proje hakkında
+
+SözFişi, iki kişi arasındaki gündelik anlaşmaları daha açık, izlenebilir ve karşılıklı kontrol edilebilir hale getirmek için geliştirilmiş bir **WAMP üzerinde çalışan MVP** projesidir. Anlaşma maddeleri üzerinde değişiklik istenebilir; yeni sürümler ve özet değerleri oluşturulabilir, OTP ile onay akışları ve kapanış durumları takip edilebilir.
+
+> **Durum:** MVP / yerel geliştirme. Gerçek dünyadaki hukuki geçerlilik veya kimlik doğrulama garantisi anlamına gelmez. OTP akışı bu sürümde yerel test moduyla açıklanmıştır.
+
+## Temel özellikler
+
+| Alan | Özellik |
+|---|---|
+| Anlaşmalar | Taslak, gönderim, karşılıklı inceleme, değişiklik talebi |
+| Sürüm yönetimi | Yeni sürüm, SHA-256 özeti ve işlem geçmişi |
+| Onay | Davet bağlantısı ve yerel test OTP akışı |
+| Belgeler | JPG, PNG, WEBP ve PDF ekleri, dosya özeti |
+| Sonuç | Tamamlandı, kısmen tamamlandı, sorun var seçenekleri |
+| Arayüz | Mobil uyumlu tasarım ve temel PWA desteği |
+
+## Görseller
+
+**Resmî marka kimliği** (gerçek proje dosyasından):
+
+![SözFişi marka panosu](docs/assets/sozfisi-brand-board.png)
+
+> Uygulama arayüz ekran görüntüleri henüz eklenmedi. Aşağıdaki kurulum adımlarından sonra gerçek çalışan ekranları alıp bu bölüme ekleyebilirsiniz.
+
+## Teknolojiler
+
+- **PHP 8.1+** — sunucu tarafı ve iş akışları
+- **MySQL / MariaDB** — veri kayıtları
+- **HTML, CSS, JavaScript** — arayüz
+- **PWA manifesti ve service worker** — temel web uygulaması desteği
+- **WampServer** — yerel çalışma ortamı
+
+## Kurulum ve teknik dokümantasyon
+
+Aşağıdaki bölüm kaynak ZIP'teki özgün teknik rehberden korunarak aktarılmıştır. Herkese açık tanıtım dosyasında test yönetici kimlik bilgileri kaldırılmıştır.
+
+---
 
 ## Giriş adresi
 
@@ -236,15 +285,10 @@ Revizyon: Her video için bir revizyon.
 
 ## Test 10 — Yönetici paneli
 
-Yerel kurulumla gelen test yöneticisi:
-
-```text
-E-posta: admin@sozfisi.local
-Şifre: Admin123!
-```
+Yerel geliştirme ortamındaki yönetici hesabı bilgilerini açık depoda yayımlamayın. Test hesaplarını canlı ortama taşımayın.
 
 1. Normal hesaptan çıkış yapın.
-2. Bu bilgilerle giriş yapın.
+2. Yerel ortamda güvenli biçimde yapılandırdığınız yönetici hesabıyla giriş yapın.
 3. Menüde **Yönetim** bağlantısı görünmelidir.
 4. “Bu anlaşma bana ait değil” bildirimleri yönetim kuyruğunda listelenir.
 
